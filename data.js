@@ -40,8 +40,8 @@ var APP_DATA = {
           "target": "5-piano-terra-cucina"
         },
         {
-          "yaw": 0.3331804759629513,
-          "pitch": -0.011315811983534374,
+          "yaw": 0.3331804442719051,
+          "pitch": -0.011315807477132012,
           "rotation": 0,
           "target": "1-piano-terra-scala"
         }
@@ -146,6 +146,12 @@ var APP_DATA = {
           "pitch": 1.01353932658518,
           "rotation": 1.5707963267948966,
           "target": "3-piano-terra-scala--1"
+        },
+        {
+          "yaw": 3.109360464843218,
+          "pitch": 0.5410908632254188,
+          "rotation": 0,
+          "target": "0-via-iapichello-39"
         }
       ],
       "infoHotspots": []
@@ -194,6 +200,12 @@ var APP_DATA = {
           "pitch": 0.20872106674310054,
           "rotation": 9.42477796076938,
           "target": "4-primo-pianosalotto"
+        },
+        {
+          "yaw": -1.5671735484449698,
+          "pitch": 0.5905095322125273,
+          "rotation": 0,
+          "target": "0-via-iapichello-39"
         }
       ],
       "infoHotspots": []
