@@ -102,21 +102,34 @@
       pinFirstLevel: true
     });
 
-    function precargarEscena(scene) {
+    function precargarTodosLosTiles(scene, geometry, callback) {
     var stage = scene.stage();
     var textureStore = stage.textureStore();
 
-    // Recorrer todos los niveles y caras
+    var pendientes = 0;
+
     geometry.levelList().forEach(function(level) {
+      var size = level.size / level.tileSize;
       ['l','r','u','d','f','b'].forEach(function(face) {
-        var tile = { face: face, z: level.z, x: 0, y: 0 };
-        textureStore.load(tile); // fuerza la carga
+        for (var y = 0; y < size; y++) {
+          for (var x = 0; x < size; x++) {
+            pendientes++;
+            var tile = { face: face, z: level.z, x: x, y: y };
+            textureStore.load(tile).then(function() {
+              pendientes--;
+              if (pendientes === 0 && callback) {
+                callback();
+              }
+            });
+          }
+        }
       });
     });
   }
-
-  // Precargamos antes de mostrar
-  precargarEscena(scene);
+  precargarTodosLosTiles(scene, geometry, function() {
+    console.log("Todos los tiles precargados");
+    scene.switchTo();
+  });
 
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
