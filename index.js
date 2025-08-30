@@ -102,6 +102,22 @@
       pinFirstLevel: true
     });
 
+    function precargarEscena(scene) {
+    var stage = scene.stage();
+    var textureStore = stage.textureStore();
+
+    // Recorrer todos los niveles y caras
+    geometry.levelList().forEach(function(level) {
+      ['l','r','u','d','f','b'].forEach(function(face) {
+        var tile = { face: face, z: level.z, x: 0, y: 0 };
+        textureStore.load(tile); // fuerza la carga
+      });
+    });
+  }
+
+  // Precargamos antes de mostrar
+  precargarEscena(scene);
+
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
       var element = createLinkHotspotElement(hotspot);
