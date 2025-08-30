@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-via-iapichello-39",
-      "name": "VIA IAPICHELLO 39",
+      "id": "0-via-iapichello",
+      "name": "VIA IAPICHELLO",
       "levels": [
         {
           "tileSize": 256,
@@ -16,32 +16,24 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
+        "yaw": 0.05292100147615031,
+        "pitch": -0.09070795689943623,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -0.3781246308382684,
-          "pitch": 0.004389481496017922,
+          "yaw": -0.37550893325397716,
+          "pitch": 0.01195496781754457,
           "rotation": 0,
-          "target": "5-piano-terra-cucina"
+          "target": "3-piano-terra-cucina"
         },
         {
-          "yaw": 0.3331804442719051,
-          "pitch": -0.011315807477132012,
+          "yaw": 0.3357988215535368,
+          "pitch": -0.017660903744161516,
           "rotation": 0,
           "target": "1-piano-terra-scala"
         }
@@ -64,17 +56,9 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -82,184 +66,80 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.002528185075847844,
-          "pitch": -0.36086271052404584,
-          "rotation": 0,
-          "target": "2-primo-piano-sgabuzzino"
+          "yaw": 0.016900018057636856,
+          "pitch": -0.3877201221150397,
+          "rotation": 12.566370614359176,
+          "target": "5-primo-piano-sgabuzzino"
         },
         {
-          "yaw": -0.2658582431475214,
-          "pitch": -0.45168196011016803,
-          "rotation": 10.995574287564278,
-          "target": "4-primo-pianosalotto"
-        },
-        {
-          "yaw": -2.749143760911121,
-          "pitch": 0.7821793202527285,
+          "yaw": -2.7432615819153305,
+          "pitch": 0.7667381390516983,
           "rotation": 1.5707963267948966,
-          "target": "5-piano-terra-cucina"
+          "target": "3-piano-terra-cucina"
         },
         {
-          "yaw": 3.0579452915215954,
-          "pitch": 0.6485648878453674,
-          "rotation": 0,
-          "target": "0-via-iapichello-39"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "2-primo-piano-sgabuzzino",
-      "name": "PRIMO PIANO (SGABUZZINO)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 3.102315035604553,
-          "pitch": 1.01353932658518,
-          "rotation": 1.5707963267948966,
-          "target": "3-piano-terra-scala--1"
-        },
-        {
-          "yaw": 3.109360464843218,
-          "pitch": 0.5410908632254188,
-          "rotation": 0,
-          "target": "0-via-iapichello-39"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "3-piano-terra-scala--1",
-      "name": "PIANO TERRA (SCALA -1)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.567453508925646,
-          "pitch": -0.0046886165687158865,
-          "rotation": 0,
-          "target": "2-primo-piano-sgabuzzino"
-        },
-        {
-          "yaw": -0.0669244597974803,
-          "pitch": 0.20872106674310054,
-          "rotation": 9.42477796076938,
-          "target": "4-primo-pianosalotto"
-        },
-        {
-          "yaw": -1.5671735484449698,
-          "pitch": 0.5905095322125273,
-          "rotation": 0,
-          "target": "0-via-iapichello-39"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "4-primo-pianosalotto",
-      "name": "PRIMO PIANO(SALOTTO)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.1291402255130034,
-          "pitch": 0.11541812230990267,
-          "rotation": 1.5707963267948966,
-          "target": "3-piano-terra-scala--1"
-        },
-        {
-          "yaw": -0.8778770012093009,
-          "pitch": 0.033611210188105645,
+          "yaw": -0.2953282268081203,
+          "pitch": -0.38647246407186486,
           "rotation": 4.71238898038469,
-          "target": "7-primo-piano-scala"
+          "target": "6-primo-piano-salotto"
+        },
+        {
+          "yaw": 3.074072087353291,
+          "pitch": 0.6344040034966074,
+          "rotation": 0,
+          "target": "0-via-iapichello"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "5-piano-terra-cucina",
+      "id": "2-piano-terra-scala_1",
+      "name": "PIANO TERRA (SCALA_1)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.08019760862143066,
+          "pitch": 0.24608434020365166,
+          "rotation": 0,
+          "target": "6-primo-piano-salotto"
+        },
+        {
+          "yaw": -1.3501596279813537,
+          "pitch": 0.6540134992731552,
+          "rotation": 1.5707963267948966,
+          "target": "3-piano-terra-cucina"
+        },
+        {
+          "yaw": 1.57868950134596,
+          "pitch": 0.19710601737705424,
+          "rotation": 0,
+          "target": "5-primo-piano-sgabuzzino"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-piano-terra-cucina",
       "name": "PIANO TERRA (CUCINA)",
       "levels": [
         {
@@ -274,46 +154,38 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
-        "yaw": 0,
         "pitch": 0,
-        "fov": 1.3365071038314758
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.68081759055368,
-          "pitch": 0.015543602451085548,
-          "rotation": 1.5707963267948966,
-          "target": "6-piano-terra-bagno"
-        },
-        {
-          "yaw": 2.1576108531785705,
-          "pitch": -0.09880161598982973,
+          "yaw": 2.1902789354968277,
+          "pitch": -0.003961707900884903,
           "rotation": 4.71238898038469,
           "target": "1-piano-terra-scala"
         },
         {
-          "yaw": 3.0544770609483063,
-          "pitch": 0.11462750146577427,
+          "yaw": 0.6832685764003816,
+          "pitch": 0.032756475554597486,
+          "rotation": 1.5707963267948966,
+          "target": "4-piano-terra-bagno"
+        },
+        {
+          "yaw": 3.05720839580479,
+          "pitch": 0.1361787727722117,
           "rotation": 0,
-          "target": "0-via-iapichello-39"
+          "target": "0-via-iapichello"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "6-piano-terra-bagno",
+      "id": "4-piano-terra-bagno",
       "name": "PIANO TERRA (BAGNO)",
       "levels": [
         {
@@ -328,28 +200,106 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
-        "yaw": 2.8815918477798217,
-        "pitch": 0.26659813972098334,
-        "fov": 1.3365071038314758
+        "yaw": 0.5432777401110318,
+        "pitch": 0.08295134645248936,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -2.087767257979573,
-          "pitch": 0.25327141114631146,
-          "rotation": 3.141592653589793,
-          "target": "5-piano-terra-cucina"
+          "yaw": -1.8319455264142128,
+          "pitch": 0.3615754993037097,
+          "rotation": 0,
+          "target": "3-piano-terra-cucina"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "5-primo-piano-sgabuzzino",
+      "name": "PRIMO PIANO (SGABUZZINO)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -3.0848568185291434,
+          "pitch": 0.6140413418947048,
+          "rotation": 7.853981633974483,
+          "target": "3-piano-terra-cucina"
+        },
+        {
+          "yaw": 3.0786096314968088,
+          "pitch": 1.0440524528184287,
+          "rotation": 1.5707963267948966,
+          "target": "2-piano-terra-scala_1"
+        },
+        {
+          "yaw": 3.105476538121165,
+          "pitch": 0.4718078197189577,
+          "rotation": 0,
+          "target": "0-via-iapichello"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "6-primo-piano-salotto",
+      "name": "PRIMO PIANO (SALOTTO)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "yaw": -0.4063017716881916,
+        "pitch": 0.1682731440310956,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.155538652597805,
+          "pitch": 0.14307030253044317,
+          "rotation": 1.5707963267948966,
+          "target": "2-piano-terra-scala_1"
+        },
+        {
+          "yaw": -0.8694109647682176,
+          "pitch": 0.10557073401222183,
+          "rotation": 4.71238898038469,
+          "target": "7-primo-piano-scala"
         }
       ],
       "infoHotspots": []
@@ -370,17 +320,9 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -388,23 +330,23 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -2.0931334837095292,
-          "pitch": 0.3843459562865643,
+          "yaw": -2.0583921539399057,
+          "pitch": 0.6081970165040449,
           "rotation": 1.5707963267948966,
-          "target": "4-primo-pianosalotto"
+          "target": "6-primo-piano-salotto"
         },
         {
-          "yaw": -0.022416943538347667,
-          "pitch": -0.5244660541281654,
-          "rotation": 4.71238898038469,
-          "target": "8-primo-piano-scala-1"
+          "yaw": -0.030897570931383456,
+          "pitch": -0.5024925110387013,
+          "rotation": 0,
+          "target": "8-primo-piano-scala_1"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "8-primo-piano-scala-1",
-      "name": "PRIMO PIANO (SCALA-1)",
+      "id": "8-primo-piano-scala_1",
+      "name": "PRIMO PIANO (SCALA_1)",
       "levels": [
         {
           "tileSize": 256,
@@ -418,238 +360,44 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
-        "yaw": -1.4877403640023843,
-        "pitch": 0.27824112883872587,
-        "fov": 1.3365071038314758
+        "yaw": -0.696528548232596,
+        "pitch": 0.25142843671427606,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.7727599760636572,
-          "pitch": 0.12799242000704858,
-          "rotation": 0,
-          "target": "13-via-mongiolino"
-        },
-        {
-          "yaw": -2.5356398865042724,
-          "pitch": 0.659414958996539,
+          "yaw": -2.537362960354253,
+          "pitch": 0.731501241424354,
           "rotation": 1.5707963267948966,
           "target": "7-primo-piano-scala"
         },
         {
-          "yaw": -1.5392146046556245,
-          "pitch": 0.22391668216094907,
+          "yaw": 0.6722219088378338,
+          "pitch": 0.28203008396760865,
           "rotation": 0,
-          "target": "9-secondo-piano-camera-da-letto"
+          "target": "9-via-mongiolino"
         },
         {
-          "yaw": -0.7357256400021139,
-          "pitch": -0.45478696678524244,
-          "rotation": 4.71238898038469,
-          "target": "14-seconodo-piano-scala"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "9-secondo-piano-camera-da-letto",
-      "name": "SECONDO PIANO (CAMERA DA LETTO)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "yaw": -2.902101750334346,
-        "pitch": -0.030523715271900898,
-        "fov": 1.3365071038314758
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.38631647945414826,
-          "pitch": 0.1138681922982876,
-          "rotation": 4.71238898038469,
-          "target": "8-primo-piano-scala-1"
-        },
-        {
-          "yaw": 2.147058215494022,
-          "pitch": 0.07907131351011643,
+          "yaw": -1.5015580605304812,
+          "pitch": 0.3053417329691914,
           "rotation": 0,
-          "target": "12-secondo-piano-bagno"
+          "target": "10-secondo-piano-camera-da-letto"
         },
         {
-          "yaw": 2.8328040441725513,
-          "pitch": 0.07991701036821652,
-          "rotation": 0,
-          "target": "10-secondo-piano-balcone"
-        },
-        {
-          "yaw": -1.0121346063708678,
-          "pitch": 0.05740670231476486,
-          "rotation": 1.5707963267948966,
-          "target": "11-secondo-piano-ripostiglio"
+          "yaw": -0.7152436578632475,
+          "pitch": -0.39177697873644846,
+          "rotation": 3.141592653589793,
+          "target": "14-secondo-piano-scala"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "10-secondo-piano-balcone",
-      "name": "SECONDO PIANO (BALCONE)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -0.024725517047597734,
-          "pitch": 0.23141267822527922,
-          "rotation": 0,
-          "target": "9-secondo-piano-camera-da-letto"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "11-secondo-piano-ripostiglio",
-      "name": "SECONDO PIANO (RIPOSTIGLIO)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.6915046405483594,
-          "pitch": 0.08138160711758857,
-          "rotation": 4.71238898038469,
-          "target": "9-secondo-piano-camera-da-letto"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "12-secondo-piano-bagno",
-      "name": "SECONDO PIANO (BAGNO)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.0992226368747566,
-          "pitch": 0.14568495736837406,
-          "rotation": 1.5707963267948966,
-          "target": "9-secondo-piano-camera-da-letto"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "13-via-mongiolino",
+      "id": "9-via-mongiolino",
       "name": "VIA MONGIOLINO",
       "levels": [
         {
@@ -664,35 +412,27 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
-        "yaw": 2.864685225695446,
-        "pitch": 0.05861245250086,
-        "fov": 1.3365071038314758
+        "yaw": -3.0630757226649195,
+        "pitch": 0.05843759039944452,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -0.05188504751254719,
-          "pitch": -0.04449589725960834,
-          "rotation": 1.5707963267948966,
-          "target": "8-primo-piano-scala-1"
+          "yaw": -0.01640717801394409,
+          "pitch": 0.020698391211867673,
+          "rotation": 0,
+          "target": "8-primo-piano-scala_1"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "14-seconodo-piano-scala",
-      "name": "SECONODO PIANO (SCALA)",
+      "id": "10-secondo-piano-camera-da-letto",
+      "name": "SECONDO PIANO (CAMERA DA LETTO)",
       "levels": [
         {
           "tileSize": 256,
@@ -706,17 +446,9 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -724,14 +456,168 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -2.904096040923161,
-          "pitch": 0.6229333094860259,
-          "rotation": 3.141592653589793,
-          "target": "8-primo-piano-scala-1"
+          "yaw": 0.3925881722556497,
+          "pitch": 0.15490486182237717,
+          "rotation": 0,
+          "target": "8-primo-piano-scala_1"
         },
         {
-          "yaw": -0.7652753079815682,
-          "pitch": -0.28969360837009894,
+          "yaw": -0.9989979637508153,
+          "pitch": 0.12831773374438527,
+          "rotation": 0,
+          "target": "12-secondo-piano-ripostiglio"
+        },
+        {
+          "yaw": 2.872685772705583,
+          "pitch": 0.1215290522045791,
+          "rotation": 0,
+          "target": "11-secondo-piano-balcone"
+        },
+        {
+          "yaw": 2.1556936617882654,
+          "pitch": 0.06642207285581847,
+          "rotation": 0,
+          "target": "13-secondo-piano-bagno"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "11-secondo-piano-balcone",
+      "name": "SECONDO PIANO (BALCONE)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.11604742833873516,
+          "pitch": 0.20922606026910273,
+          "rotation": 0,
+          "target": "10-secondo-piano-camera-da-letto"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "12-secondo-piano-ripostiglio",
+      "name": "SECONDO PIANO (RIPOSTIGLIO)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.7361060271080504,
+          "pitch": 0.34215516043265026,
+          "rotation": 0,
+          "target": "10-secondo-piano-camera-da-letto"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "13-secondo-piano-bagno",
+      "name": "SECONDO PIANO (BAGNO)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.095175549736858,
+          "pitch": 0.26188577884508213,
+          "rotation": 0,
+          "target": "10-secondo-piano-camera-da-letto"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "14-secondo-piano-scala",
+      "name": "SECONDO PIANO (SCALA)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.8903804555612993,
+          "pitch": 0.6170905373275026,
+          "rotation": 3.141592653589793,
+          "target": "8-primo-piano-scala_1"
+        },
+        {
+          "yaw": -0.8882941525789576,
+          "pitch": -0.37555514398331447,
           "rotation": 0,
           "target": "15-terzo-piano-camera-da-letto"
         }
@@ -754,46 +640,38 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
-        "yaw": 3.0212252331638902,
-        "pitch": -0.1022221058359456,
-        "fov": 1.3365071038314758
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -0.9079417464882678,
-          "pitch": 0.07600253250886979,
-          "rotation": 1.5707963267948966,
-          "target": "14-seconodo-piano-scala"
+          "yaw": -0.9240367370038101,
+          "pitch": 0.1122114530324616,
+          "rotation": 0,
+          "target": "14-secondo-piano-scala"
         },
         {
-          "yaw": 2.885993158844485,
-          "pitch": 0.014885910942158631,
+          "yaw": 2.9393416926536773,
+          "pitch": 0.06654284360868523,
           "rotation": 0,
           "target": "16-terzo-piano-balcone"
         },
         {
-          "yaw": 2.128936345944651,
-          "pitch": 0.11062163039758133,
+          "yaw": 2.155267281440402,
+          "pitch": 0.08898942457572545,
           "rotation": 0,
-          "target": "19-terzo-piano-bagno"
+          "target": "17-terzo-piano-bagno"
         },
         {
-          "yaw": 0.17208343240003465,
-          "pitch": 0.11023467619802574,
+          "yaw": 0.17007221053422583,
+          "pitch": 0.11581607226027835,
           "rotation": 0,
-          "target": "17-terzo-piano-lavanderia"
+          "target": "18-terzo-piano-scala-lavanderia"
         }
       ],
       "infoHotspots": []
@@ -814,17 +692,9 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -832,106 +702,16 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 2.9340480376007365,
-          "pitch": 0.2740584383120499,
-          "rotation": 3.141592653589793,
-          "target": "15-terzo-piano-camera-da-letto"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "17-terzo-piano-lavanderia",
-      "name": "TERZO PIANO (LAVANDERIA)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.6005994747631593,
-          "pitch": 0.3484668693630617,
-          "rotation": 3.141592653589793,
-          "target": "15-terzo-piano-camera-da-letto"
-        },
-        {
-          "yaw": -1.5009755011090604,
-          "pitch": -0.50557960980532,
+          "yaw": 2.99611469899945,
+          "pitch": 0.2615917457199046,
           "rotation": 0,
-          "target": "18-quarto-piano-attico"
+          "target": "15-terzo-piano-camera-da-letto"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "18-quarto-piano-attico",
-      "name": "QUARTO PIANO (ATTICO)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -3.0473754356650673,
-          "pitch": 0.8176631126247145,
-          "rotation": 3.141592653589793,
-          "target": "17-terzo-piano-lavanderia"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "19-terzo-piano-bagno",
+      "id": "17-terzo-piano-bagno",
       "name": "TERZO PIANO (BAGNO)",
       "levels": [
         {
@@ -946,17 +726,83 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
         }
       ],
-      "faceSize": 2976,
+      "faceSize": 960,
+      "initialViewParameters": {
+        "yaw": 2.690829382748598,
+        "pitch": 0.34735193217982996,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.2258737740853505,
+          "pitch": 0.27669361117567703,
+          "rotation": 0,
+          "target": "15-terzo-piano-camera-da-letto"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "18-terzo-piano-scala-lavanderia",
+      "name": "TERZO PIANO (SCALA-LAVANDERIA))",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
+      "initialViewParameters": {
+        "yaw": 1.337861736122342,
+        "pitch": -0.09184514327314375,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.5968995874607703,
+          "pitch": 0.32930994233823796,
+          "rotation": 0,
+          "target": "15-terzo-piano-camera-da-letto"
+        },
+        {
+          "yaw": -1.4886991099861042,
+          "pitch": -0.5206913215925333,
+          "rotation": 0,
+          "target": "19-terzo-piano-attico"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "19-terzo-piano-attico",
+      "name": "TERZO PIANO (ATTICO)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 960,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -964,16 +810,16 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -1.1613234305571538,
-          "pitch": 0.36460697864661995,
-          "rotation": 3.141592653589793,
-          "target": "15-terzo-piano-camera-da-letto"
+          "yaw": -3.0491246485191272,
+          "pitch": 0.8740469420806924,
+          "rotation": 0,
+          "target": "18-terzo-piano-scala-lavanderia"
         }
       ],
       "infoHotspots": []
     }
   ],
-  "name": "VIA IAPICHELLO 39, Alimena, Palermo.",
+  "name": "VIA IAPICHELLO 39",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,

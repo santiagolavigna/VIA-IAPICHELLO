@@ -359,7 +359,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  animation: moveUpDown 1.5s ease-in-out infinite;
 }
 
 @keyframes moveUpDown {
@@ -372,6 +371,11 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   100% {
     transform: translateY(0); /* Vuelve a la posición inicial */
   }
+}
+
+/* Aplica la animación a la imagen de la flecha */
+.link-hotspot-icon {
+  animation: moveUpDown 1.5s ease-in-out infinite;
 }
 
 

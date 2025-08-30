@@ -79,7 +79,7 @@
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
     //var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
-    var limiter = function(viewParams) {
+      var limiter = function(viewParams) {
 
       var minFov = 100 * Math.PI / 180;
       var maxFov = 110 * Math.PI / 180;
@@ -92,8 +92,8 @@
 
       return viewParams;
     };   
-   
-    var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
+
+   var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
       source: source,
@@ -200,8 +200,8 @@
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo({
-      transitionDuration: 900
-  });
+      transitionDuration: 1000
+    });
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
