@@ -21,7 +21,8 @@
   var screenfull = window.screenfull;
   var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   var data = isMobile ? window.APP_DATA_MOBILE : window.APP_DATA;
-
+  console.log(data)
+  console.log(isMobile)
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
   var sceneNameElement = document.querySelector('#titleBar .sceneName');
@@ -60,7 +61,7 @@
   if (bowser.msie && parseFloat(bowser.version) < 11) {
     document.body.classList.add('tooltip-fallback');
   }
-
+  console.log(data)
   // Viewer options.
   var viewerOpts = {
     controls: {
