@@ -346,6 +346,24 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   transition: opacity 0.2s;
 }
 
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Posición inicial */
+  }
+  50% {
+    transform: translateY(-8px); /* Mueve 8px hacia arriba (puedes ajustar el valor) */
+  }
+  100% {
+    transform: translateY(0); /* Vuelve a la posición inicial */
+  }
+}
+
+/* Aplica la animación a la imagen de la flecha */
+.link-hotspot-icon {
+  animation: moveUpDown 1.5s ease-in-out infinite;
+}
+
+
 .no-touch .link-hotspot:hover {
   opacity: 1;
 }

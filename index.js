@@ -85,7 +85,23 @@
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.webp" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    //var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    
+    var limiter = function(viewParams) {
+
+      var minFov = 100 * Math.PI / 180;
+      var maxFov = 110 * Math.PI / 180;
+      viewParams.fov = Math.max(minFov, Math.min(maxFov, viewParams.fov));
+
+      // Limitar pitch (vertical)
+      var minPitch = -0.5;
+      var maxPitch = 0.5;
+      viewParams.pitch = Math.max(minPitch, Math.min(maxPitch, viewParams.pitch));
+
+      return viewParams;
+    };   
+
+    
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
