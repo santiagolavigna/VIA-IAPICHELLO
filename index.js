@@ -19,7 +19,8 @@
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
   var screenfull = window.screenfull;
-  var data = window.APP_DATA;
+  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  var data = isMobile ? window.APP_DATA_MOBILE : window.APP_DATA;
 
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
