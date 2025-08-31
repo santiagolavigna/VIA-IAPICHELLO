@@ -29,19 +29,8 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
-  var loadingOverlay = document.getElementById('loadingOverlay');
 
-  // Detectar dispositivo móvil mejorado
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  if (isMobile) {
-    document.body.classList.remove('desktop');
-    document.body.classList.add('mobile');
-  } else {
-    document.body.classList.remove('mobile');
-    document.body.classList.add('desktop');
-  }
-
-  // También mantener la detección original por tamaño
+  // Detect desktop or mobile mode.
   if (window.matchMedia) {
     var setMode = function() {
       if (mql.matches) {
@@ -55,6 +44,8 @@
     var mql = matchMedia("(max-width: 500px), (max-height: 500px)");
     setMode();
     mql.addListener(setMode);
+  } else {
+    document.body.classList.add('desktop');
   }
 
   // Detect whether we are on a touch device.
@@ -79,15 +70,6 @@
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
 
-  // Variable para la escena actual
-  var currentScene = null;
-
-  // Evento para cuando el viewer está listo
-  viewer.addEventListener('ready', function() {
-    // Ocultar loading cuando esté listo
-    loadingOverlay.style.display = 'none';
-  });
-
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
     var urlPrefix = "tiles";
@@ -96,21 +78,8 @@
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = function(viewParams) {
-      // Ajustar FOV según dispositivo
-      var minFov = isMobile ? 70 * Math.PI / 180 : 100 * Math.PI / 180;
-      var maxFov = 110 * Math.PI / 180;
-      viewParams.fov = Math.max(minFov, Math.min(maxFov, viewParams.fov));
-
-      // Limitar pitch (vertical)
-      var minPitch = isMobile ? -0.30 : -0.40;
-      var maxPitch = isMobile ? 0.30 : 0.40;
-      viewParams.pitch = Math.max(minPitch, Math.min(maxPitch, viewParams.pitch));
-
-      return viewParams;
-    };   
-
-   var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
+    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
       source: source,
@@ -213,32 +182,14 @@
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
 
-function switchScene(scene) {
-  // Mostrar loading al cambiar de escena
-  //loadingOverlay.style.display = 'flex';
-  
-  stopAutorotate();
-  scene.view.setParameters(scene.data.initialViewParameters);
-  
-  try {
-    scene.scene.switchTo({
-      transitionDuration: 1000
-    });
-    
-    // Usar setTimeout en lugar de .then() ya que switchTo no devuelve promesa
-    setTimeout(function() {
-      // Ocultar loading después de un tiempo razonable
-      loadingOverlay.style.display = 'none';
-      startAutorotate();
-      updateSceneName(scene);
-      updateSceneList(scene);
-      currentScene = scene;
-    }, 200); // Tiempo suficiente para la transición + carga
-    
-  } catch (error) {
-    console.error(error);
+  function switchScene(scene) {
+    stopAutorotate();
+    scene.view.setParameters(scene.data.initialViewParameters);
+    scene.scene.switchTo();
+    startAutorotate();
+    updateSceneName(scene);
+    updateSceneList(scene);
   }
-}
 
   function updateSceneName(scene) {
     sceneNameElement.innerHTML = sanitize(scene.data.name);
@@ -294,6 +245,7 @@ function switchScene(scene) {
   }
 
   function createLinkHotspotElement(hotspot) {
+
     // Create wrapper element to hold icon and tooltip.
     var wrapper = document.createElement('div');
     wrapper.classList.add('hotspot');
@@ -317,6 +269,7 @@ function switchScene(scene) {
     });
 
     // Prevent touch and scroll events from reaching the parent element.
+    // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
 
     // Create tooltip element.
@@ -332,6 +285,7 @@ function switchScene(scene) {
   }
 
   function createInfoHotspotElement(hotspot) {
+
     // Create wrapper element to hold icon and tooltip.
     var wrapper = document.createElement('div');
     wrapper.classList.add('hotspot');
@@ -397,6 +351,7 @@ function switchScene(scene) {
     modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
 
     // Prevent touch and scroll events from reaching the parent element.
+    // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
 
     return wrapper;

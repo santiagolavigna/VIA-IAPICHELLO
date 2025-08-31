@@ -134,6 +134,12 @@ var APP_DATA = {
           "pitch": 0.19710601737705424,
           "rotation": 0,
           "target": "5-primo-piano-sgabuzzino"
+        },
+        {
+          "yaw": -1.5456743309001268,
+          "pitch": 0.6542923350345085,
+          "rotation": 0,
+          "target": "0-via-iapichello"
         }
       ],
       "infoHotspots": []

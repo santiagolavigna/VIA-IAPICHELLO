@@ -42,40 +42,6 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
-/* Pantalla de carga */
-#loadingOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.loading-spinner {
-  width: 50px;
-  height: 50px;
-  border: 5px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-.loading-text {
-  color: #fff;
-  margin-top: 20px;
-  font-size: 16px;
-}
-
 #titleBar {
   position: absolute;
   top: 0;
@@ -385,10 +351,8 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .mobile .link-hotspot {
-  width: 50px;
-  height: 50px;
-  margin-left: -25px;
-  margin-top: -25px;
+  width: 70px;
+  height: 70px;
 }
 
 .link-hotspot-icon {
@@ -397,47 +361,38 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   cursor: pointer;
 }
 
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0); /* Posición inicial */
-  }
-  50% {
-    transform: translateY(-8px); /* Mueve 8px hacia arriba (puedes ajustar el valor) */
-  }
-  100% {
-    transform: translateY(0); /* Vuelve a la posición inicial */
-  }
-}
-
-/* Aplica la animación a la imagen de la flecha */
-.link-hotspot-icon {
-  animation: moveUpDown 1.5s ease-in-out infinite;
-}
-
-.mobile .link-hotspot-icon {
-  animation: moveUpDown 2s ease-in-out infinite;
-}
-
 .link-hotspot-tooltip {
   position: absolute;
   left: 100%;
   top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
+
   margin-left: 3px;
+
   font-size: 16px;
+
   max-width: 300px;
+
   padding: 8px 10px;
+
   border-radius: 5px;
+
   background-color: rgb(58,68,84);
   background-color: rgba(58,68,84,0.8);
+
   color: #fff;
+
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+
   cursor: pointer;
+
   opacity: 0;
+
   -ms-transform: translateX(-8px);
   -webkit-transform: translateX(-8px);
   transform: translateX(-8px);
+
   -webkit-transition: -ms-transform 0.3s,
                       -webkit-transform 0.3s,
                       transform 0.3s,
@@ -448,11 +403,8 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
               opacity 0.3s;
 }
 
-.mobile .link-hotspot-tooltip {
-  top: 12px; /* ( 50 - (14 + 2*6) ) / 2 */
-  font-size: 14px;
-  padding: 6px 8px;
-  max-width: 200px;
+.mobile .link-hotspot {
+  top: 19px; /* ( 70 - (16 + 2*8) ) / 2 */
 }
 
 .no-touch .link-hotspot:hover .link-hotspot-tooltip {
@@ -875,17 +827,4 @@ body.view-control-buttons .viewControlButton {
 }
 .viewControlButton-6 {
   margin-left: 105px;
-}
-
-/* Optimizaciones para móviles */
-.mobile #pano {
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-/* Prevenir zoom no deseado en inputs */
-.mobile input, .mobile select {
-  font-size: 16px;
 }
