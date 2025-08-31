@@ -21,8 +21,6 @@
   var screenfull = window.screenfull;
   var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   var data = isMobile ? window.APP_DATA_MOBILE : window.APP_DATA;
-  console.log(data)
-  console.log(isMobile)
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
   var sceneNameElement = document.querySelector('#titleBar .sceneName');
@@ -61,7 +59,6 @@
   if (bowser.msie && parseFloat(bowser.version) < 11) {
     document.body.classList.add('tooltip-fallback');
   }
-  console.log(data)
   // Viewer options.
   var viewerOpts = {
     controls: {
@@ -79,10 +76,11 @@
 
   // Create scenes.
   var scenes = data.scenes.map(function(data) {
-    var urlPrefix = "tiles_webp";
+    var urlPrefix = isMobile ? "tiles_webp" : "tiles";
+    var extension = isMobile ? "webp" : "jpg";
     var source = Marzipano.ImageUrlSource.fromString(
-      urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.webp",
-      { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.webp" });
+      urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}." + extension,
+      { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview." + extension });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
     //var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
