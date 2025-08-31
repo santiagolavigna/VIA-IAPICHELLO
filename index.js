@@ -63,7 +63,12 @@
   // Viewer options.
   var viewerOpts = {
     controls: {
-      mouseViewMode: data.settings.mouseViewMode
+      mouseViewMode: data.settings.mouseViewMode,
+      mouseZoomSpeed: 0.8,
+      mouseMoveSpeed: 0.7,
+      touchZoomSpeed: 0.6,
+      touchMoveSpeed: 0.1,       
+      scrollZoomSpeed: 0.8
     }
   };
 
