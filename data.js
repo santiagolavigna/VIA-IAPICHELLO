@@ -84,8 +84,8 @@ var APP_DATA = {
           "target": "6-primo-piano-salotto"
         },
         {
-          "yaw": 3.074072087353291,
-          "pitch": 0.6344040034966074,
+          "yaw": 3.0293892340276836,
+          "pitch": 0.5727489232551779,
           "rotation": 0,
           "target": "0-via-iapichello"
         }
@@ -456,9 +456,9 @@ var APP_DATA = {
       ],
       "faceSize": 960,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 3.047656834732778,
+        "pitch": 0.09589801493050132,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
@@ -508,9 +508,9 @@ var APP_DATA = {
       ],
       "faceSize": 960,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 2.5121608459782667,
+        "pitch": 0.21089323078212274,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
@@ -610,9 +610,9 @@ var APP_DATA = {
       ],
       "faceSize": 960,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.6713587820346749,
+        "pitch": -0.29266826451798167,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
@@ -650,14 +650,14 @@ var APP_DATA = {
       ],
       "faceSize": 960,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 2.9364200273653474,
+        "pitch": 0.01332563588462854,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
-          "yaw": -0.9240367370038101,
-          "pitch": 0.1122114530324616,
+          "yaw": -0.8890700257472144,
+          "pitch": 0.08693050912305189,
           "rotation": 0,
           "target": "14-secondo-piano-scala"
         },
@@ -736,9 +736,9 @@ var APP_DATA = {
       ],
       "faceSize": 960,
       "initialViewParameters": {
-        "yaw": 2.690829382748598,
-        "pitch": 0.34735193217982996,
-        "fov": 1.5707963267948966
+        "yaw": 0.05742167389902164,
+        "pitch": 0.09990873522166588,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
