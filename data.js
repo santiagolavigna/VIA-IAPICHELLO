@@ -29,13 +29,15 @@ var APP_DATA = {
           "yaw": -0.37550893325397716,
           "pitch": 0.01195496781754457,
           "rotation": 0,
-          "target": "3-piano-terra-cucina"
+          "target": "3-piano-terra-cucina",
+          "icon": "img/icons/kitchen.png"
         },
         {
           "yaw": 0.3357988215535368,
           "pitch": -0.017660903744161516,
           "rotation": 0,
-          "target": "1-piano-terra-scala"
+          "target": "1-piano-terra-scala",
+          "icon": "img/icons/stairs.png"
         }
       ],
       "infoHotspots": []
@@ -75,13 +77,15 @@ var APP_DATA = {
           "yaw": -2.7432615819153305,
           "pitch": 0.7667381390516983,
           "rotation": 1.5707963267948966,
-          "target": "3-piano-terra-cucina"
+          "target": "3-piano-terra-cucina",
+          "icon": "img/icons/kitchen.png"
         },
         {
           "yaw": -0.2953282268081203,
           "pitch": -0.38647246407186486,
           "rotation": 4.71238898038469,
-          "target": "6-primo-piano-salotto"
+          "target": "6-primo-piano-salotto",
+          "icon": "img/icons/living.png"
         },
         {
           "yaw": 3.0293892340276836,
@@ -121,13 +125,15 @@ var APP_DATA = {
           "yaw": -0.08019760862143066,
           "pitch": 0.24608434020365166,
           "rotation": 0,
-          "target": "6-primo-piano-salotto"
+          "target": "6-primo-piano-salotto",
+          "icon": "img/icons/living.png"
         },
         {
           "yaw": -1.3501596279813537,
           "pitch": 0.6540134992731552,
           "rotation": 1.5707963267948966,
-          "target": "3-piano-terra-cucina"
+          "target": "3-piano-terra-cucina",
+          "icon": "img/icons/kitchen.png"
         },
         {
           "yaw": 1.57868950134596,
@@ -173,13 +179,15 @@ var APP_DATA = {
           "yaw": 2.1902789354968277,
           "pitch": -0.003961707900884903,
           "rotation": 4.71238898038469,
-          "target": "1-piano-terra-scala"
+          "target": "1-piano-terra-scala",
+          "icon": "img/icons/stairs.png"
         },
         {
           "yaw": 0.6832685764003816,
           "pitch": 0.032756475554597486,
           "rotation": 1.5707963267948966,
-          "target": "4-piano-terra-bagno"
+          "target": "4-piano-terra-bagno",
+          "icon": "img/icons/bathroom.png"
         },
         {
           "yaw": 3.05720839580479,
@@ -219,7 +227,8 @@ var APP_DATA = {
           "yaw": -1.8319455264142128,
           "pitch": 0.3615754993037097,
           "rotation": 0,
-          "target": "3-piano-terra-cucina"
+          "target": "3-piano-terra-cucina",
+          "icon": "img/icons/kitchen.png"
         }
       ],
       "infoHotspots": []
@@ -253,13 +262,15 @@ var APP_DATA = {
           "yaw": -3.0848568185291434,
           "pitch": 0.6140413418947048,
           "rotation": 7.853981633974483,
-          "target": "3-piano-terra-cucina"
+          "target": "3-piano-terra-cucina",
+          "icon": "img/icons/kitchen.png"
         },
         {
           "yaw": 3.0786096314968088,
           "pitch": 1.0440524528184287,
           "rotation": 1.5707963267948966,
-          "target": "2-piano-terra-scala_1"
+          "target": "2-piano-terra-scala_1",
+          "icon": "img/icons/stairs.png"
         },
         {
           "yaw": 3.105476538121165,
@@ -299,13 +310,15 @@ var APP_DATA = {
           "yaw": -2.155538652597805,
           "pitch": 0.14307030253044317,
           "rotation": 1.5707963267948966,
-          "target": "2-piano-terra-scala_1"
+          "target": "2-piano-terra-scala_1",
+          "icon": "img/icons/stairs.png"
         },
         {
           "yaw": -0.8694109647682176,
           "pitch": 0.10557073401222183,
           "rotation": 4.71238898038469,
-          "target": "7-primo-piano-scala"
+          "target": "7-primo-piano-scala",
+          "icon": "img/icons/stairs.png"
         }
       ],
       "infoHotspots": []
@@ -339,13 +352,15 @@ var APP_DATA = {
           "yaw": -2.0583921539399057,
           "pitch": 0.6081970165040449,
           "rotation": 1.5707963267948966,
-          "target": "6-primo-piano-salotto"
+          "target": "6-primo-piano-salotto",
+          "icon": "img/icons/living.png"
         },
         {
           "yaw": -0.030897570931383456,
           "pitch": -0.5024925110387013,
           "rotation": 0,
-          "target": "8-primo-piano-scala_1"
+          "target": "8-primo-piano-scala_1",
+          "icon": "img/icons/stairs.png"
         }
       ],
       "infoHotspots": []
@@ -379,7 +394,8 @@ var APP_DATA = {
           "yaw": -2.537362960354253,
           "pitch": 0.731501241424354,
           "rotation": 1.5707963267948966,
-          "target": "7-primo-piano-scala"
+          "target": "7-primo-piano-scala",
+          "icon": "img/icons/stairs.png"
         },
         {
           "yaw": 0.6722219088378338,
@@ -391,13 +407,15 @@ var APP_DATA = {
           "yaw": -1.5015580605304812,
           "pitch": 0.3053417329691914,
           "rotation": 0,
-          "target": "10-secondo-piano-camera-da-letto"
+          "target": "10-secondo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         },
         {
           "yaw": -0.7152436578632475,
           "pitch": -0.39177697873644846,
           "rotation": 3.141592653589793,
-          "target": "14-secondo-piano-scala"
+          "target": "14-secondo-piano-scala",
+          "icon": "img/icons/stairs.png"
         }
       ],
       "infoHotspots": []
@@ -465,7 +483,8 @@ var APP_DATA = {
           "yaw": 0.3925881722556497,
           "pitch": 0.15490486182237717,
           "rotation": 0,
-          "target": "8-primo-piano-scala_1"
+          "target": "8-primo-piano-scala_1",
+          "icon": "img/icons/stairs.png"
         },
         {
           "yaw": -0.9989979637508153,
@@ -483,7 +502,8 @@ var APP_DATA = {
           "yaw": 2.1556936617882654,
           "pitch": 0.06642207285581847,
           "rotation": 0,
-          "target": "13-secondo-piano-bagno"
+          "target": "13-secondo-piano-bagno",
+          "icon": "img/icons/bathroom.png"
         }
       ],
       "infoHotspots": []
@@ -517,7 +537,8 @@ var APP_DATA = {
           "yaw": -0.11604742833873516,
           "pitch": 0.20922606026910273,
           "rotation": 0,
-          "target": "10-secondo-piano-camera-da-letto"
+          "target": "10-secondo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         }
       ],
       "infoHotspots": []
@@ -551,7 +572,8 @@ var APP_DATA = {
           "yaw": 2.7361060271080504,
           "pitch": 0.34215516043265026,
           "rotation": 0,
-          "target": "10-secondo-piano-camera-da-letto"
+          "target": "10-secondo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         }
       ],
       "infoHotspots": []
@@ -585,7 +607,8 @@ var APP_DATA = {
           "yaw": -2.095175549736858,
           "pitch": 0.26188577884508213,
           "rotation": 0,
-          "target": "10-secondo-piano-camera-da-letto"
+          "target": "10-secondo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         }
       ],
       "infoHotspots": []
@@ -619,13 +642,15 @@ var APP_DATA = {
           "yaw": -2.8903804555612993,
           "pitch": 0.6170905373275026,
           "rotation": 3.141592653589793,
-          "target": "8-primo-piano-scala_1"
+          "target": "8-primo-piano-scala_1",
+          "icon": "img/icons/stairs.png"
         },
         {
           "yaw": -0.8882941525789576,
           "pitch": -0.37555514398331447,
           "rotation": 0,
-          "target": "15-terzo-piano-camera-da-letto"
+          "target": "15-terzo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         }
       ],
       "infoHotspots": []
@@ -659,7 +684,8 @@ var APP_DATA = {
           "yaw": -0.8890700257472144,
           "pitch": 0.08693050912305189,
           "rotation": 0,
-          "target": "14-secondo-piano-scala"
+          "target": "14-secondo-piano-scala",
+          "icon": "img/icons/stairs.png"
         },
         {
           "yaw": 2.9393416926536773,
@@ -671,7 +697,8 @@ var APP_DATA = {
           "yaw": 2.155267281440402,
           "pitch": 0.08898942457572545,
           "rotation": 0,
-          "target": "17-terzo-piano-bagno"
+          "target": "17-terzo-piano-bagno",
+          "icon": "img/icons/bathroom.png"
         },
         {
           "yaw": 0.17007221053422583,
@@ -711,7 +738,8 @@ var APP_DATA = {
           "yaw": 2.99611469899945,
           "pitch": 0.2615917457199046,
           "rotation": 0,
-          "target": "15-terzo-piano-camera-da-letto"
+          "target": "15-terzo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         }
       ],
       "infoHotspots": []
@@ -745,7 +773,8 @@ var APP_DATA = {
           "yaw": -1.2258737740853505,
           "pitch": 0.27669361117567703,
           "rotation": 0,
-          "target": "15-terzo-piano-camera-da-letto"
+          "target": "15-terzo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         }
       ],
       "infoHotspots": []
@@ -779,7 +808,8 @@ var APP_DATA = {
           "yaw": -2.5968995874607703,
           "pitch": 0.32930994233823796,
           "rotation": 0,
-          "target": "15-terzo-piano-camera-da-letto"
+          "target": "15-terzo-piano-camera-da-letto",
+          "icon": "img/icons/bedroom.png"
         },
         {
           "yaw": -1.4886991099861042,

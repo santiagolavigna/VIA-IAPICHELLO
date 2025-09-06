@@ -20,7 +20,6 @@
   var bowser = window.bowser;
   var screenfull = window.screenfull;
   var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  console.log(isMobile)
   var data = isMobile ? window.APP_DATA_MOBILE : window.APP_DATA;
 
   // Grab elements from DOM.
@@ -270,7 +269,7 @@
 
     // Create image element.
     var icon = document.createElement('img');
-    icon.src = 'img/link.png';
+    icon.src = hotspot.icon || 'img/link.png';
     icon.classList.add('link-hotspot-icon');
 
     // Set rotation transform.
